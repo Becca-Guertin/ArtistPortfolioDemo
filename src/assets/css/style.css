@@ -1,0 +1,186 @@
+.box {
+  position: relative;
+  width: 100%;
+}
+
+.containerPink {
+  background-image: url("https://sunpopbucket.s3.us-west-1.amazonaws.com/images/SunpopLandingStrip.png");
+  max-width: 2000px;
+  max-height: 400px;
+  /* align-self: center; */
+  /* display: flexbox; */
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box:hover .image {
+  opacity: 0.3;
+}
+
+.box:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #d3a4ff;
+  color: white;
+  font-size: 40px;
+  font-family: "Brush Script MT";
+  padding: 16px 32px;
+}
+
+.text2 {
+  background-color: #ff4800;
+  color: white;
+  font-size: 40px;
+  font-family: "Brush Script MT";
+  padding: 16px 32px;
+}
+
+.text3 {
+  background-color: #07c700;
+  color: white;
+  font-size: 40px;
+  font-family: "Brush Script MT";
+  padding: 16px 32px;
+}
+
+.sliderimg {
+  justify-content: center;
+  height: auto;
+  width: 300px;
+  object-fit: contain;
+}
+
+.shadow {
+  box-shadow: 0 10px 12px rgba(50, 50, 93, 0.11), 0 6px 8px rgba(0, 0, 0, 0.08);
+}
+
+.roundCorners {
+  border-radius: 12px;
+}
+
+.roundCorners1 {
+  border-radius: 7px;
+}
+
+.roundCorners2 {
+  border-radius: 50px;
+}
+.roundCorners3 {
+  border-radius: 25px;
+}
+.round {
+  border-radius: 50%;
+}
+
+.zoom {
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.hoverHand {
+  cursor: grab;
+}
+.hoverHand2 {
+  cursor: grab;
+  box-shadow: 0 10px 12px rgba(50, 50, 93, 0.11), 0 6px 8px rgba(0, 0, 0, 0.08);
+}
+
+.background {
+  opacity: 50%;
+}
+.logo {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.logo2 {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.logoAnimate:hover {
+  transform: rotate(-15deg);
+}
+
+.backHome {
+  max-width: 90px;
+  max-height: 90px;
+}
+
+
+@media screen and (max-width: 1408px) {
+  .featuredFlower {
+    display: none;
+  }
+}
+@media screen and (max-width: 795px) {
+  .logo {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .logo2 {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .logo {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .logo2 {
+    max-width: 35px;
+    max-height: 35px;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .logo {
+    max-width: 75px;
+    max-height: 75px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .logo {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .logo2 {
+    display: none;
+  }
+  .containerPink {
+    background-image: none;
+  }
+}
